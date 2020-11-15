@@ -1,0 +1,1575 @@
+<!DOCTYPE HTML>
+<!--
+	Broadcast by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <style type="text/css">
+            body {　
+            　overflow-y: scroll;
+            　overflow-x: hidden;
+            }
+            /*[\[CSS\]關閉橫向捲軸 | 梅問題．教學網](https://www.minwt.com/webdesign-dev/css/65.html)*/
+        </style>
+        <script type="text/javascript">
+
+
+			function setHeight(obj){
+			     obj.style.height = obj.scrollHeight + 'px';
+			}
+
+
+			var save_obj = function(){
+				return {
+					2:{
+						'in':{},
+						'in_反向比對':{},
+						'out':{},
+						'out_反向比對':{},
+					},
+					3:{
+						'in':{},
+						'in_反向比對':{},
+						'out':{},
+						'out_反向比對':{},
+					}
+				}
+			};
+
+			var _2_in = {};
+			var _3_in = {};
+			var _2_out = {};
+			var _3_out = {};
+
+			_2_in[2] = {
+				"MerchantOrderId": "string",
+				"OrderDescription": "string",
+				"Attach": "string",
+				"Amount": 100000000,
+				"OrderBuildTimeSpan": 0,
+				"OrderExpireTimeSpan": 0,
+				"Symbol": "string",
+				"ReferUrl": "string",
+				"CallBackUrl": "string",
+				"Ip": "string",
+				"MerchantId": "string",
+				"MerchantUserId": "string",
+				"Sign": "string"
+			};
+
+			_2_out[2] = {
+				"OrderId": "string",
+				"Qrcode": "string",
+				"ReturnCode": "string",
+				"RetrunMessage": "string",
+				"Sign": "string"
+			};
+
+			//BuildRelationUser
+			_2_in[3] = {
+				"MerchantUserId": "string",
+				"Ip": "string",
+				"CallBackUrl": "string",
+				"MerchantId": "string",
+				"Sign": "string"
+			};
+
+			_2_out[3] = {
+				"Qrcode": "string",
+				"ReturnCode": "string",
+				"RetrunMessage": "string",
+				"Sign": "string"
+			};
+
+			//NotifyRelationUser
+			_2_in[4] = {
+				"MerchantId": "string",
+				"Sign": "string",
+				"UserWallet": "string",
+				"MerchantUserId": "string",
+				"UserName": "string"
+			};
+			_2_out[4] = {
+
+			};
+
+			//NotifyTradResult
+			_2_in[5] = {
+				"MerchantId": "string",
+				"Sign": "string",
+				"OrderId": "string",
+				"MerchantOrderId": "string",
+				"Attach": "string",
+				"Symbol": "string",
+				"PayAmount": 0,
+				"PayTimeSpan": 0,
+				"EventId": "string"
+			};
+			_2_out[5] = {
+
+			};
+
+			//MerchantCreateUser
+
+			_2_in[6] = {
+				"MerchantUserId": "string",
+				"Password": "string",
+				"UserName": "string",
+				"PIN": "string",
+				"Ip": "string",
+				"MerchantId": "string",
+				"Sign": "string"
+			};
+
+
+			_2_out[6] = {
+				"UserId": "string",
+				"MerchantUserId": "string",
+				"ReturnCode": "string",
+				"RetrunMessage": "string",
+				"Sign": "string"
+			};
+
+			//MerchantWithdraw
+
+			_2_in[7] = {
+				"MerchantId": "string",
+				"MerchantUserId": "string",
+				"MerchantWithdrawId": "string",
+				"UserWallet": "string",
+				"Amount": 0,
+				"Ip": "string",
+				"CallBackUrl": "string",
+				"Sign": "string",
+				"AutoWithdraw": "AUTO"
+			};
+
+
+			_2_out[7] = {
+				"WithdrawId": "string",
+				"MerchantWithdrawId": "string",
+				"ReturnCode": "string",
+				"RetrunMessage": "string",
+				"Sign": "string"
+			};
+
+
+			//QueryGlobalPayOrder
+			_2_in[8] = {
+				"OrderId": "string",
+				"MerchantOrderId": "string",
+				"Ip": "string",
+				"MerchantId": "string",
+				"Sign": "string"
+			};
+
+
+			_2_out[8] = {
+				"OrderId": "string",
+				"MerchantOrderId": "string",
+				"OrderDescription": "string",
+				"Attach": "string",
+				"Amount": 0,
+				"OrderBuildTimeSpan": 0,
+				"OrderExpireTimeSpan": 0,
+				"Symbol": "string",
+				"ReferUrl": "string",
+				"OrderStatus": "string",
+				"ReturnCode": "string",
+				"RetrunMessage": "string",
+				"EventId": "string",
+				"MerchantUserId": "string",
+				"Sign": "string"
+			};
+
+
+			//QueryMerchantWithdraw
+
+			_2_in[9] = {
+				"WithdrawId": "string",
+				"MerchantWithdrawId": "string",
+				"Ip": "string",
+				"MerchantId": "string",
+				"Sign": "string"
+			};
+
+
+			_2_out[9] = {
+				"MerchantUserId": "string",
+				"UserWallet": "string",
+				"WithdrawId": "string",
+				"MerchantWithdrawId": "string",
+				"WithdrawAmount": "string",
+				"Status": "string",
+				"WithdrawDateTime": "0",
+				"ApprovedDateTime": "0",
+				"ReturnCode": "string",
+				"RetrunMessage": "string",
+				"Sign": "string"
+			};
+
+
+			//NotifyWithdrawResult
+			_2_in[10] = {
+				"MerchantUserId": "string",
+				"MerchantId ": "string",
+				"UserWallet": "string",
+				"WithdrawId": "string",
+				"MerchantWithdrawId": "string",
+				"WithdrawAmount": "string",
+				"Status": "string",
+				"ReplyDateTime ": "0",
+				"ReturnCode": "string",
+				"RetrunMessage": "string",
+				"Sign": "string"
+			};
+
+			_2_out[10] = {};
+
+
+
+
+
+
+
+			//CreateCGPPayOrder
+
+			_3_in[4] = {
+				"MerchantId": "string",
+				"MerchantOrderId": "string",
+				"OrderDescription": "string",
+				"Amount": 100000000,
+				"OrderTimeLive": 0,
+				"Symbol": "string",
+				"ReferUrl": "string",
+				"CallBackUrl": "string",
+				"Ip": "string",
+				"MerchantUserId": "string",
+				"Sign": "string"
+			};
+
+			_3_out[4] = {
+				"OrderId": "string",
+				"Qrcode": "string",
+				"QrcodeImage": "string",
+				"ReturnCode": "string",
+				"ReturnMessage": "string",
+				"Sign": "string"
+			};
+
+			//QueryCGPPayOrder
+			_3_in[5] = {
+				"OrderId": "string",
+				"MerchantOrderId": "string",
+				"Symbol": "string",
+				"Ip": "string",
+				"MerchantId": "string",
+				"Sign": "string"
+			};
+
+			//--------------------------------------------文件需要修改
+			_3_out[5] = {
+				"OrderId": "string",
+				"PaymentId": "string",
+				"MerchantOrderId": "string",
+				"MerchantUserId": "string",
+				"OrderDescription": "string",
+				"Symbol": "string",
+				"Amount": 0,
+				"ExchangeRMB": "string",
+				" ExpireUnixTimestamp ": 0,
+				"OrderStatus": "string",
+				"CallBackUrl": "string",
+				"ReferUrl": "string",
+				"EventId": "string",
+				"ReturnCode": "string",
+				"ReturnMessage": "string",
+				"Sign": "string"
+			};
+
+			//NotifyCGPTradResult
+			//--------------------------------------------文件需要修改
+			_3_in[6] = {
+				"MerchantId": "string",
+				"MerchantOrderId": "string",
+				"PaymentId": "string",
+				"Symbol": "string",
+				"PayAmount": 0,
+				"ExchangeRMB": "string",
+				"PayUnixTimestamp": 0,
+				"EventId": "string",
+				"Sign": "string"
+			};
+
+			_3_out[6] = {};
+
+
+
+
+
+
+
+			//CreateCryptoPayOrder
+			//--------------------------------------------文件需要修改
+			_3_in[7] = {
+				"MerchantId": "string",
+				"MerchantOrderId": "string",
+				"OrderDescription": "string",
+				"Amount": 100000000,
+				"AnchoredRMB": "string",
+				"Symbol": "string",
+				"CallBackUrl": "string",
+				"Ip": "string",
+				"MerchantUserId": "string",
+				"Sign": "string"
+			};
+
+			_3_out[7] = {
+				"OrderId": "string",
+				"Qrcode": "string",
+				"CryptoWallet": "string",
+				"ReturnCode": "string",
+				"ReturnMessage": "string",
+				"Sign": "string"
+			};
+
+			//QueryCryptoPayOrder
+			_3_in[8] = {
+				"OrderId": "string",
+				"MerchantOrderId": "string",
+				"Symbol": "string",
+				"Ip": "string",
+				"MerchantId": "string",
+				"Sign": "string"
+			};
+
+			//--------------------------------------------文件需要修改
+			_3_out[8] = {
+				"OrderId": "string",
+				"PaymentId": "string",
+				"MerchantOrderId": "string",
+				"MerchantUserId": "string",
+				"OrderDescription": "string",
+				"Symbol": "string",
+				"Amount": 0,
+				"ExchangeRMB": "string",
+				"OrderStatus": "string",
+				"CallBackUrl": "string",
+				"EventId": "string",
+				"ReturnCode": "string",
+				"ReturnMessage": "string",
+				"Sign": "string"
+			};
+
+			//NotifyCryptoTradResult
+			//--------------------------------------------文件需要修改
+			_3_in[9] = {
+				"MerchantId": "string",
+				"MerchantOrderId": "string",
+				"PaymentId": "string",
+				"Symbol": "string",
+				"PayAmount": 0,
+				"AnchoredRMB": "string",
+				"ExchangeRMB": "string",
+				"PayUnixTimestamp": 0,
+				"EventId": "string",
+				"Sign": "string"
+			};
+
+			 _3_out[9] = {};
+
+
+
+
+
+
+			//BuildRelationUser
+			_3_in[10] = {
+				"MerchantId": "string",
+				"MerchantUserId": "string",
+				"Ip": "string",
+				"CallBackUrl": "string",
+				"Sign": "string"
+			};
+
+			_3_out[10] = {
+				"Qrcode": "string",
+				"QrcodeImage": "string",
+				"ReturnCode": "string",
+				"ReturnMessage": "string",
+				"Sign": "string"
+			};
+
+
+			//NotifyRelationUser
+			//--------------------------------------------文件需要修改
+			_3_in[11] = {
+				"MerchantId": "string",
+				"MerchantUserId": "string",
+				"Sign": "string",
+				"UserName": "string",
+				"CGPWallet": "string"
+			}
+
+
+
+			_3_out[11] = {};
+
+
+
+			//MerchantWithdraw
+			//--------------------------------------------文件需要修改
+			_3_in[12] = {
+				"MerchantId": "string",
+				"MerchantUserId": "string",
+				"MerchantWithdrawId": "string",
+				"UserWallet": "string",
+				"Symbol": "string",
+				"RMBAmount": "string",
+				"CryptoAmount": 100000000,
+				"Ip": "string",
+				"CallBackUrl": "string",
+				"Sign": "string",
+				"AutoWithdraw": "AUTO"
+			};
+			//--------------------------------------------文件需要修改
+			_3_out[12] = {
+				"WithdrawId": "string",
+				"MerchantWithdrawId": "string",
+				"ReturnCode": "string",
+				"ReturnMessage": "string",
+				"Sign": "string"
+			};
+
+			//QueryMerchantWithdraw
+			_3_in[13] = {
+				"WithdrawId": "string",
+				"MerchantWithdrawId": "string",
+				"Symbol": "string",
+				"Ip": "string",
+				"MerchantId": "string",
+				"Sign": "string"
+			};
+
+			_3_out[13] = {
+				"MerchantUserId": "string",
+				"UserWallet": "string",
+				"WithdrawId": "string",
+				"MerchantWithdrawId": "string",
+				"Symbol": "string",
+				"RMBAmount": "string",
+				"WithdrawAmount": "string",
+				"Status": "string",
+				"WithdrawDateTime": "0",
+				"ApprovedDateTime": "0",
+				"ReturnCode": "string",
+				"ReturnMessage": "string",
+				"Sign": "string"
+			};
+
+			//NotifyWithdrawResult
+			//--------------------------------------------文件需要修改
+			_3_in[14] = {
+				"MerchantUserId": "string",
+				"MerchantId ": "string",
+				"UserWallet": "string",
+				"WithdrawId": "string",
+				"MerchantWithdrawId": "string",
+				"Symbol": "string",
+				"RMBAmount": "string",
+				"WithdrawAmount": 0,
+				"ReplyDateTime ": "0",
+				"Sign": "string"
+			};
+
+			_3_out[14] = {};
+			//ExchangeRate
+			//--------------------------------------------文件需要修改
+			_3_in[15] = {
+				"Symbol": "string",
+				"UnixTimestamp": 0
+			};
+			//--------------------------------------------文件需要修改
+			_3_out[15] = {
+				"RMBRate": "string",
+				"ReturnCode": "string",
+				"ReturnMessage": "string"
+			};
+
+
+
+			//要迴圈筆完所有，挑出最高的五個
+
+
+
+
+
+				function check_item_diff(obj_A_JSON,obj_B_JSON,sample_nameB,debug_on=false){ //A是輸入值，B是比對模型
+				    var flag_B_JSON_have_A_JSON_item = {};
+				    var isBreak = false;
+				    var isContinue = false;
+				   
+				    for (var key_new in obj_A_JSON) {
+				        if(isContinue){
+				            continue;
+				        }else{
+				            if(isBreak){
+				                break;
+				            }else{
+				                (debug_on==true)?console.error('外圈 key_new = ' + key_new):'';
+				            }
+				        }
+
+				        for(var key_l in obj_B_JSON){
+				           if( (key_l == 'key') || (key_l == 'removeItem') || (key_l == 'length') || (key_l == 'getItem') || (key_l == 'setItem') || (key_l == 'clear') ){
+				                continue;
+				           }
+				           (debug_on==true)?console.log('內圈 key_l = ' + key_l):'';
+				           if(key_new.toLowerCase() == key_l.toLowerCase()){
+	/**/			           //if(key_new == key_l){
+				                (debug_on==true)?console.info('抓到相同：' + key_new + ' = ' + key_l):'';
+				                flag_B_JSON_have_A_JSON_item[key_new] = true;
+				                break; 
+				           }else{
+				                flag_B_JSON_have_A_JSON_item[key_new] = false;
+				           }
+				        }
+				    }
+
+				    //console.error('\n\n\nObject.getOwnPropertyNames(flag_B_JSON_have_A_JSON_item).length = ' + Object.getOwnPropertyNames(flag_B_JSON_have_A_JSON_item).length + '\n\n\n'); /*https://blog.csdn.net/u011341352/article/details/77352832 Object.getOwnPropertyNames(obj).length;*/
+
+				    //(debug_on==true)?console.error('flag_B_JSON_have_A_JSON_item  = ' + JSON.stringify(flag_B_JSON_have_A_JSON_item,null,'\t') ):''; 
+				    (debug_on==true)?console.error('flag_B_JSON_have_A_JSON_item = ' + JSON.stringify(flag_B_JSON_have_A_JSON_item,null,'\t') ):'';
+				    (debug_on==true)?console.log('obj_A_JSON = '):'';
+				    (debug_on==true)?console.table(obj_A_JSON):'';
+				    for (var key in flag_B_JSON_have_A_JSON_item){
+				        if( (!(flag_B_JSON_have_A_JSON_item[key])) && ( !( /.*停機.*/gi.test(key) ) ) ){
+				            //localStorage.setItem(key,obj_A_JSON[key]);        //2020.10.31 暫時沒作用    
+				            (debug_on==true)?console.error(key + ' 只在 obj_A_JSON 存在'):'';
+				        }
+				    } 
+
+				    (debug_on==true)?console.log('\n\n\n'):'';
+				   
+				    var flag_A_JSON_have_B_JSON_item = {};
+				    var flag_A_JSON_have_B_JSON_item_true_conut = 0;//flag_A_JSON_have_B_JSON_item（輸入Ａ與模型Ｂ的符合）
+				    var A_JSON_have_B_JSON_key_and_value = {}; //（輸入Ａ與模型Ｂ的符合）
+				    var isBreak = false;
+				   
+				    for (var key_l in obj_B_JSON) {
+				        if( (key_l == 'key')|| (key_l == 'removeItem') || (key_l == 'member_length') || (key_l == 'length') || (key_l == 'getItem') || (key_l == 'setItem') || (key_l == 'clear') ){
+				            continue ;
+				        }else{
+				            if(isBreak){
+				                break;
+				            }else{
+				                (debug_on==true)?console.error('外圈 key_l = ' + key_l):'';
+				            }
+				        }
+
+				        for(var key_ in obj_A_JSON){
+				            (debug_on==true)?console.log('內圈 key_ = ' + key_):'';
+				            if(key_.toLowerCase()== key_l.toLowerCase()){
+		/**/		            //if(key_== key_l){
+				                (debug_on==true)?console.info('抓到相同：' + key + ' = ' + key_l):'';
+				                flag_A_JSON_have_B_JSON_item_true_conut++;
+				                A_JSON_have_B_JSON_key_and_value[key_l] = obj_A_JSON[key_];
+				                flag_A_JSON_have_B_JSON_item[key_l] = true;
+				                break;
+				            }else{
+				                flag_A_JSON_have_B_JSON_item[key_l] = false;
+				                (debug_on==true)?console.log(key_l + ' = ' + flag_A_JSON_have_B_JSON_item[key_l]):'';
+				            }
+				        }
+				    }
+				    //(debug_on==true)?console.error('flag_A_JSON_have_B_JSON_item = ' + JSON.stringify(flag_A_JSON_have_B_JSON_item,null,'\t')):'';
+				    (debug_on==true)?(console.error('flag_A_JSON_have_B_JSON_item（輸入Ａ與模型Ｂ的符合） = ' + JSON.stringify(flag_A_JSON_have_B_JSON_item,null,'\t')) ):'';
+				    (debug_on==true)?console.log('obj_B_JSON = '):'';
+				    (debug_on==true)?console.table(obj_B_JSON):'';
+
+				    (debug_on==true)?console.log('\n\n\n'):'';
+
+				    for (var key in flag_A_JSON_have_B_JSON_item){
+				        if( (!(flag_A_JSON_have_B_JSON_item[key]))  ){
+				            (debug_on==true)?console.error(key + ' = ' + obj_B_JSON[key] +  ' 只在 obj_B_JSON 存在'):'';
+				        }
+				    } 
+				    for (var key in flag_A_JSON_have_B_JSON_item){
+				        if( ((flag_A_JSON_have_B_JSON_item[key]))  ){
+				        	(debug_on==true)?console.error(key + ' = ' + obj_A_JSON[key] + ' =? ' + obj_B_JSON[key] + ' 在 obj_A_JSON、obj_B_JSON 都存在'):'';
+				        }
+				    }
+
+
+
+
+				    var out__A_have_B_string = JSON.stringify(obj_A_JSON,null,'\t') + '\n\n比對模型：\n\n' + JSON.stringify(obj_B_JSON,null,'\t') + '\n\n後，下列項目符合：\n\n';
+				    var out__p = ((flag_A_JSON_have_B_JSON_item_true_conut / Object.getOwnPropertyNames(obj_B_JSON).length)*100).toFixed(2);
+				    for (var key in A_JSON_have_B_JSON_key_and_value){
+				    	out__A_have_B_string = out__A_have_B_string + key + ' = ' + A_JSON_have_B_JSON_key_and_value[key] + '\n';
+				    }
+
+				    out__A_have_B_string += '\n匹配率：' + out__p + '%'; //https://cloud.tencent.com/developer/ask/32602
+				    
+				    if(out__p>95){
+				    	out__A_have_B_string += '\n超過 95% 像';
+				    } else
+				    if(out__p>90){
+				    	out__A_have_B_string += '\n超過 90% 像';
+				    } else
+				    if(out__p>87){
+				    	out__A_have_B_string += '\n超過 87% 像';
+				    } else
+				    if(out__p>80){
+				    	out__A_have_B_string += '\n超過 80% 像';
+				    } else
+				    if(out__p>70){
+				    	out__A_have_B_string += '\n超過 70% 像';
+				    } else
+				    if(out__p>60){
+				    	out__A_have_B_string += '\n超過 60% 像';
+				    }
+				    (debug_on==true)?console.error('Object.getOwnPropertyNames(obj_B_JSON).length = ' + Object.getOwnPropertyNames(obj_B_JSON).length):'';
+				    (debug_on==true)?console.error('flag_A_JSON_have_B_JSON_item_true_conut = ' + flag_A_JSON_have_B_JSON_item_true_conut):'';//flag_A_JSON_have_B_JSON_item（輸入Ａ與模型Ｂ的符合）
+
+				    // console.log('\n\n匹配率：' + (flag_A_JSON_have_B_JSON_item_true_conut / Object.getOwnPropertyNames(obj_B_JSON).length)*100 + '%');
+				    (debug_on==true)?console.log(out__A_have_B_string):'';
+
+				    return {
+				    	"same_persen":out__p,
+				    	"sample_name":sample_nameB,
+				    	"JSON":{
+				    		"keyin":obj_A_JSON,
+				    		"sample":obj_B_JSON
+				    	}
+
+				    }
+
+				}
+
+			function save_all_compare(target_JSON_obj,save_target_obj) {
+
+				for (var i = 2; i <= 10; i++) {//2_in
+					save_target_obj[2]['in'][i] = check_item_diff(target_JSON_obj,_2_in[i],'2_in_' + i); //有沒有系統有的項目
+					//console.error(JSON.stringify(check_item_diff(A_JSON,_2_in[i]),null,'\t'))
+				}
+
+				for (var i = 2; i <= 10; i++) {//2_in
+					save_target_obj[2]['out'][i] = check_item_diff(target_JSON_obj,_2_out[i],'2_out_' + i);
+					//console.error(JSON.stringify(check_item_diff(A_JSON,_2_in[i]),null,'\t'))
+				}
+
+				for (var i = 4; i <= 15; i++) {//2_in
+					save_target_obj[3]['in'][i] = check_item_diff(target_JSON_obj,_3_in[i],'3_in_' + i);
+					//console.error(JSON.stringify(check_item_diff(A_JSON,_2_in[i]),null,'\t'))
+				}
+
+				for (var i = 4; i <= 15; i++) {//2_in
+					save_target_obj[3]['out'][i] = check_item_diff(target_JSON_obj,_3_out[i],'3_out_' + i);
+					//console.error(JSON.stringify(check_item_diff(A_JSON,_2_in[i]),null,'\t'))
+				}
+				//console.error(save_target_obj);
+				for (var i = 2; i <= 10; i++) {//2_in
+					save_target_obj[2]['in_反向比對'][i] = check_item_diff(_2_in[i],target_JSON_obj,'2_in_' + i + '_反向比對'); //系統有沒有我亂寫的項目
+					//console.error(JSON.stringify(check_item_diff(A_JSON,_2_in[i]),null,'\t'))
+				}
+
+				for (var i = 2; i <= 10; i++) {//2_in
+					save_target_obj[2]['out_反向比對'][i] = check_item_diff(_2_out[i],target_JSON_obj,'2_out_' + i + '_反向比對');
+					//console.error(JSON.stringify(check_item_diff(A_JSON,_2_in[i]),null,'\t'))
+				}
+
+				for (var i = 4; i <= 15; i++) {//2_in
+					save_target_obj[3]['in_反向比對'][i] = check_item_diff(_3_in[i],target_JSON_obj,'3_in_' + i + '_反向比對');
+					//console.error(JSON.stringify(check_item_diff(A_JSON,_2_in[i]),null,'\t'))
+				}
+
+				for (var i = 4; i <= 15; i++) {//2_in
+					save_target_obj[3]['out_反向比對'][i] = check_item_diff(_3_out[i],target_JSON_obj,'3_out_' + i + '_反向比對');
+					//console.error(JSON.stringify(check_item_diff(A_JSON,_2_in[i]),null,'\t'))
+				}
+			}
+
+			// check_item_diff(A_JSON,B_JSON);
+			//console.error('\n\n\n\n\n\n\n' + JSON.stringify(check_item_diff(A_JSON,_3_in[4]),null,'\t'));
+			//這是單一比對
+
+			//要迴圈筆完所有，挑出最高的五個
+
+
+
+
+            function font_set(a) {
+                a = void 0 === a ? "'\u5fae\u8edf\u6b63\u9ed1\u9ad4','Microsoft JhengHei','sans-serif'" : a;
+                tag_font_set("body", a);
+                tag_font_set("h1", a);
+                tag_font_set("h2", a);
+                tag_font_set("h3", a);
+                tag_font_set("h4", a);
+                tag_font_set("h5", a);
+                tag_font_set("h6", a);
+                tag_font_set("h7", a);
+                tag_font_set("li", a);
+                tag_font_set("a", a);
+                tag_font_set("div", a);
+                tag_font_set("span", a);
+                tag_font_set("textarea", a);
+                tag_font_set("input", a);
+                tag_font_set("select", a);
+                tag_font_set("ruby", a);
+                tag_font_set("rb", a);
+                tag_font_set("rt", a);
+                if (a != localStorage.font || 3 > parseInt(localStorage.jsgendfo_timer)) localStorage.jsgendfo_timer = parseInt(localStorage.jsgendfo_timer) + 1, jsgendfo(), _jf.flush()
+            }
+            function tag_font_set(a, b) {
+                if (void 0 !== document.getElementsByTagName(a)[0])
+                    for (var c = 0; c < document.getElementsByTagName(a).length; c++) document.getElementsByTagName(a)[c].style.fontFamily != b && ("'\u5fae\u8edf\u6b63\u9ed1\u9ad4','Microsoft JhengHei','sans-serif'" == b && (document.getElementsByTagName(a)[c].style.fontFamily = b), document.getElementsByTagName(a)[c].style.fontFamily = b + document.getElementsByTagName(a)[c].style.fontFamily + ",'\u5fae\u8edf\u6b63\u9ed1\u9ad4','Microsoft JhengHei','sans-serif'", localStorage.font = b)
+            }
+            function css_add_inline(a) {
+                var b = document.createElement("div");
+                b.innerHTML = "<p>x</p><style>" + a + "</style>";
+                document.body.appendChild(b.childNodes[1])
+            }
+            var my_webfont_cssset_string = "@font-face {border: 0px solid !important;background-color:rgba(97%, 97%, 97%, 0.0) !important;font-family: 'genjyuugothicx_p_normal';font-style: normal;font-weight: 500;src: url(https://synr.github.io/font/genjyuugothicx_p_normal.eot);src: url(https://synr.github.io/font/genjyuugothicx_p_normal.eot?#iefix) format('embedded-opentype'), url(https://synr.github.io/font/genjyuugothicx_p_normal.woff2) format('woff2'), url(https://synr.github.io/font/genjyuugothicx_p_normal.woff) format('woff'), url(https://synr.github.io/font/genjyuugothicx_p_normal.ttf) format('truetype');}"
+                // my_webfont_cssset_string += "@font-face {border: 0px solid !important;background-color:rgba(97%, 97%, 97%, 0.0) !important;font-family: 'genjyuugothicx_p_normal_local';font-style: normal;font-weight: 500;src: url(https://172.30.5.188/add/font/genjyuugothicx_p_normal.eot);src: url(https://172.30.5.188/add/font/genjyuugothicx_p_normal.eot?#iefix) format('embedded-opentype'), url(https://172.30.5.188/add/font/genjyuugothicx_p_normal.woff2) format('woff2'), url(https://172.30.5.188/add/font/genjyuugothicx_p_normal.woff) format('woff'), url(https://172.30.5.188/add/font/genjyuugothicx_p_normal.ttf) format('truetype');}";
+            function default_select(target_id){
+                for (i = 0; i < document.getElementById(target_id).length; i++) {
+                  //console.log(document.getElementById('date').options[document.getElementById('date').selectedIndex].value);
+                    //if(document.getElementById('date').options[i].value==(new Date().getMonth()+1) + '\/' + new Date().getDate()){
+                    if(document.getElementById(target_id).options[i].value==localStorage[target_id]){
+                        document.getElementById(target_id).selectedIndex = i;
+                    }
+                }
+                select_value(target_id,target_id);
+            }
+            function get_radio_value(target_name){
+                for(var k=0;k<document.getElementsByName(target_name).length;k++){
+                    if(document.getElementsByName(target_name)[k].checked){
+                        console.log(document.getElementsByName(target_name)[k].value);
+                        localStorage[target_name] = document.getElementsByName(target_name)[k].value;
+                        //set_string();
+                        return document.getElementsByName(target_name)[k].value;
+                    }
+                }
+            }
+            setTimeout(function(){
+                 css_add_inline(my_webfont_cssset_string);font_set("'genjyuugothicx_p_normal','genjyuugothicx_p_normal_local','\u5fae\u8edf\u6b63\u9ed1\u9ad4','Microsoft JhengHei','sans-serif'");
+                 // if(localStorage['name']==undefined){}else{document.getElementById('name').value = localStorage['name']; set_string()}
+                 // if(localStorage['priority']==undefined){localStorage['priority']='慶'}else{}
+                 // if(localStorage['menu']==undefined){localStorage['menu']='客戶無法上網'}else{}
+                 // if(localStorage['date']==undefined){localStorage['date']=(new Date().getMonth()+1) + '\/' + new Date().getDate()}else{}
+                 // if(localStorage['time']==undefined){localStorage['time']='09'}else{}
+                 document.addEventListener('click', function(){
+                    // if(check_num8(document.getElementById('name').value)){
+                    //     localStorage['name'] = document.getElementById('name').value;
+                    // }
+                    //document.getElementById('name').focus();
+                 });
+            }, 100);
+
+
+
+			function sort_array_test(target_obj){
+				let test_array = [];
+				for (let i = 2; i <= 10; i++) {
+				     test_array.push(JSON.parse('{\"same_persen' + '\":\"' + target_obj[2]['in'][i]['same_persen'] + '\"\,\n\"title\"\:\"' + target_obj[2]['in'][i]['sample_name'] + '\"}'));
+				     test_array.push(JSON.parse('{\"same_persen' + '\":\"' + target_obj[2]['in_反向比對'][i]['same_persen'] + '\"\,\n\"title\"\:\"' + target_obj[2]['in_反向比對'][i]['sample_name'] + '\"}'));
+				     test_array.push(JSON.parse('{\"same_persen' + '\":\"' + target_obj[2]['out'][i]['same_persen'] + '\"\,\n\"title\"\:\"' + target_obj[2]['out'][i]['sample_name'] + '\"}'));
+				     test_array.push(JSON.parse('{\"same_persen' + '\":\"' + target_obj[2]['out_反向比對'][i]['same_persen'] + '\"\,\n\"title\"\:\"' + target_obj[2]['out_反向比對'][i]['sample_name'] + '\"}'));
+				     // test_array.push(JSON.parse('{\"' + target_obj[2]['in'][i]['same_persen'] + '\":\"' +  target_obj[2]['in'][i]['sample_name'] + '\"}'));
+				     // test_array.push(JSON.parse('{\"' + target_obj[2]['in_反向比對'][i]['same_persen'] + '\":\"' +  target_obj[2]['in_反向比對'][i]['sample_name'] + '\"}'));
+				     // test_array.push(JSON.parse('{\"' + target_obj[2]['out'][i]['same_persen'] + '\":\"' +  target_obj[2]['out'][i]['sample_name'] + '\"}'));
+				     // test_array.push(JSON.parse('{\"' + target_obj[2]['out_反向比對'][i]['same_persen'] + '\":\"' +  target_obj[2]['out_反向比對'][i]['sample_name'] + '\"}'));
+				}
+				for (let i = 4; i <= 15; i++) {
+				     test_array.push(JSON.parse('{\"same_persen'  + '\":\"' + target_obj[3]['in'][i]['same_persen'] + '\"\,\n\"title\"\:\"' + target_obj[3]['in'][i]['sample_name'] + '\"}'));
+				     test_array.push(JSON.parse('{\"same_persen' + '\":\"' + target_obj[3]['in_反向比對'][i]['same_persen'] + '\"\,\n\"title\"\:\"' + target_obj[3]['in_反向比對'][i]['sample_name'] + '\"}'));
+				     test_array.push(JSON.parse('{\"same_persen' + '\":\"' + target_obj[3]['out'][i]['same_persen'] + '\"\,\n\"title\"\:\"' + target_obj[3]['out'][i]['sample_name'] + '\"}'));
+				     test_array.push(JSON.parse('{\"same_persen' + '\":\"' + target_obj[3]['out_反向比對'][i]['same_persen'] + '\"\,\n\"title\"\:\"' + target_obj[3]['out_反向比對'][i]['sample_name'] + '\"}'));
+				     // test_array.push(JSON.parse('{\"' + target_obj[3]['in'][i]['same_persen'] + '\":\"' +  target_obj[3]['in'][i]['sample_name'] + '\"}'));
+				     // test_array.push(JSON.parse('{\"' + target_obj[3]['in_反向比對'][i]['same_persen'] + '\":\"' +  target_obj[3]['in_反向比對'][i]['sample_name'] + '\"}'));
+				     // test_array.push(JSON.parse('{\"' + target_obj[3]['out'][i]['same_persen'] + '\":\"' +  target_obj[3]['out'][i]['sample_name'] + '\"}'));
+				     // test_array.push(JSON.parse('{\"' + target_obj[3]['out_反向比對'][i]['same_persen'] + '\":\"' +  target_obj[3]['out_反向比對'][i]['sample_name'] + '\"}'));
+				}
+
+				//console.error(test_array);
+				return test_array;
+			}
+
+			function down(x,y){
+			    return y.same_persen - x.same_persen;
+			}
+
+
+
+var test_obj_save1 = new save_obj();
+var test_obj_save2 = new save_obj();
+
+B_JSON = {
+    "Amount": 100000000,
+    "Attach": "alipay",
+    "CallBackUrl": "http://23.100.91.229/return/cgpayzhifu/1002201022122615420065",
+    "Ip": "61.220.20.16",
+    "MerchantId": "697d0395ed9d11844556fcc9125f7726",
+    "MerchantOrderId": "1002201022122615420065",
+    "MerchantUserId": "697d0395ed9d11844556fcc9125f7726",
+    "OrderBuildTimeSpan": 1603340775,
+    "OrderDescription": "alipay",
+    "OrderExpireTimeSpan": 1603341375,
+    "ReferUrl": "http://23.100.91.229/notify/cgpayzhifu/1002201022122615420065",
+    "Symbol": "CGP",
+    "Sign": "45fd2fc5ed5bec6e79d31cfe5c0db4ba"
+};
+
+A_JSON = {
+"MerchantId":"90cf7c143668b287c9c9b7256f523e1c",
+"MerchantOrderId":"cs3579819",
+"PaymentId":"tpru6mhj2bxuf",
+"Symbol":"CGP",
+"PayAmount":"100000000",
+"ExchangeRMB":"1",
+"PayUnixTimestamp":"1603793383",
+"EventId":"",
+"Sign":"5DE32300033E0FB26AD92A37CA78C57E",
+"CGPWallet":""
+};
+
+
+			//var sort_gogogo;
+
+
+			setTimeout(function(){
+				if(typeof localStorage['input_JSON']!=='undefined'){
+					document.getElementById('input_JSON').value = localStorage['input_JSON'];
+				}
+			}, 100);
+
+
+			setTimeout(function(){
+
+
+				//save_all_compare(A_JSON,test_obj_save1);
+
+				// var sort_gogogo = sort_array_test(test_obj_save1);
+				// for (var k in sort_gogogo) {
+				// 	for (var i in sort_gogogo[k]) {
+				// 		if(sort_gogogo[k][i]=='NaN') sort_gogogo[k][i] = "0.00";//console.log(sort_gogogo[k][i]);//sort_gogogo[k] = {"0.00":sort_gogogo[k][i]};
+				// 	}
+				// }
+
+				// console.log(sort_gogogo);
+				// sort_gogogo.sort(down);
+				// console.log('排序後');
+				// console.log(sort_gogogo);
+
+
+				 document.getElementById('input_JSON').addEventListener('keyup', function(){
+				 	// check_num8(document.getElementById('name').value);
+					//document.getElementById('name').focus();
+
+				 		localStorage['input_JSON'] = document.getElementById('input_JSON').value;
+
+				 });
+
+
+				 document.getElementById('input_JSON').addEventListener('keydown', function(){
+				 	// check_num8(document.getElementById('name').value);
+					//document.getElementById('name').focus();
+
+				 		localStorage['input_JSON'] = document.getElementById('input_JSON').value;
+
+				 });
+
+
+				 document.getElementById('input_JSON').addEventListener('change', function(){
+				 	// check_num8(document.getElementById('name').value);
+					//document.getElementById('name').focus();
+
+				 		localStorage['input_JSON'] = document.getElementById('input_JSON').value;
+
+				 });
+
+
+				 document.getElementById('input_JSON').addEventListener('focus', function(){
+				 	// check_num8(document.getElementById('name').value);
+					//document.getElementById('name').focus();
+
+				 		localStorage['input_JSON'] = document.getElementById('input_JSON').value;
+
+				 });
+
+
+
+
+				 document.getElementById('___').addEventListener('change', function(){
+				 	// check_num8(document.getElementById('name').value);
+					//document.getElementById('name').focus();
+					for (var i = 0; i < document.getElementById('___').length; i++) {
+						if(document.getElementById('___').options[i].selected == true){
+							// console.log(document.getElementById('___').options[i].text);
+							// document.getElementById('outitem').innerText = document.getElementById('___').options[i].text;
+							document.getElementById('samplename').innerText = JSON.parse(document.getElementById('__' + (i+1) ).value)['samplename'];
+							document.getElementById('per').innerText = JSON.parse(document.getElementById('__' + (i+1) ).value)['per'];
+							document.getElementById('Sample_JSON').value = JSON.stringify(JSON.parse(document.getElementById('__' + (i+1) ).value)['Sample_JSON'],null,'\t');
+							document.getElementById('Compare_JSON').value = JSON.stringify(JSON.parse(document.getElementById('__' + (i+1) ).value)['Compare_JSON'],null,'\t');
+                            console.log(i+1);
+                        }
+					}
+				 });
+
+
+				 document.getElementById('___').addEventListener('click', function(){
+				 	// check_num8(document.getElementById('name').value);
+					//document.getElementById('name').focus();
+
+					for (var i = 0; i < document.getElementById('___').length; i++) {
+						if(document.getElementById('___').options[i].selected == true){
+							// console.log(document.getElementById('___').options[i].text);
+							// document.getElementById('outitem').innerText = document.getElementById('___').options[i].text;
+							document.getElementById('samplename').innerText = JSON.parse(document.getElementById('__' + (i+1) ).value)['samplename'];
+							document.getElementById('per').innerText = JSON.parse(document.getElementById('__' + (i+1) ).value)['per'];
+							document.getElementById('Sample_JSON').value = JSON.stringify(JSON.parse(document.getElementById('__' + (i+1) ).value)['Sample_JSON'],null,'\t');
+							document.getElementById('Compare_JSON').value = JSON.stringify(JSON.parse(document.getElementById('__' + (i+1) ).value)['Compare_JSON'],null,'\t');
+                            console.log(i+1);
+                        }
+					}
+				 });
+
+
+				 document.getElementById('input_JSON').addEventListener('dblclick', function(){ //計算
+				 	analysis();
+				 });
+				 analysis();
+
+ 			}, 200);
+
+
+			function analysis(show_target_num=0){
+
+				 	// check_num8(document.getElementById('name').value);
+					//document.getElementById('name').focus();
+
+				 		//localStorage['input_JSON'] = document.getElementById('input_JSON').value;
+				 		document.getElementById('input_JSON').value = JSON.stringify(JSON.parse(document.getElementById('input_JSON').value),null,'\t');
+
+				 		var input_JSON_obj = JSON.parse(document.getElementById('input_JSON').value);
+						var test_obj_save3 = new save_obj();
+
+						save_all_compare(input_JSON_obj,test_obj_save3);
+
+						var sort_gogogo = sort_array_test(test_obj_save3);
+						for (var k in sort_gogogo) {
+							for (var i in sort_gogogo[k]) {
+								if(sort_gogogo[k][i]=='NaN') sort_gogogo[k][i] = "0.00";//console.log(sort_gogogo[k][i]);//sort_gogogo[k] = {"0.00":sort_gogogo[k][i]};
+							}
+						}
+
+						console.log(sort_gogogo);
+						sort_gogogo.sort(down);
+						console.log('排序後');
+						console.log(sort_gogogo);
+
+						localStorage['5mae'] = JSON.stringify(sort_gogogo);
+						localStorage['cal'] = JSON.stringify(test_obj_save3);
+						//console.error(JSON.parse(localStorage['cal'])); //總
+
+
+						//console.log('1. ' +  JSON.parse(localStorage['5mae'])[0]['same_persen'] + '%，可能是 ' + JSON.parse(localStorage['5mae'])[0]['title'] + JSON.stringify(JSON.parse(localStorage['cal'])[2]['in_反向比對'][2]['JSON']['sample'],null,'\t'));
+
+						//console.log(JSON.parse(localStorage['cal'])[2]['in_反向比對'][2]['JSON']['sample']);
+
+
+
+						// console.log('2_in_2_反向比對'.replace(/(\d)_(in|out)_(\d)_(反向比對)|(\d)_(in|out)_(\d)/g,'$1')); //反向 版本
+						// console.log('2_in_2_反向比對'.replace(/(\d)_(in|out)_(\d)_(反向比對)|(\d)_(in|out)_(\d)/g,'$2')); //反向 in / out 
+						// console.log('2_in_2_反向比對'.replace(/(\d)_(in|out)_(\d)_(反向比對)|(\d)_(in|out)_(\d)/g,'$3')); //反向 版本子項
+						// console.log('2_in_2_反向比對'.replace(/(\d)_(in|out)_(\d)_(反向比對)|(\d)_(in|out)_(\d)/g,'$4')); //反向比對
+
+						// console.log('2_in_2'.replace(/(\d)_(in|out)_(\d)_(反向比對)|(\d)_(in|out)_(\d)/g,'$5')); //非反向 版本
+						// console.log('2_in_2'.replace(/(\d)_(in|out)_(\d)_(反向比對)|(\d)_(in|out)_(\d)/g,'$6')); //非反向 in/out
+						// console.log('2_in_2'.replace(/(\d)_(in|out)_(\d)_(反向比對)|(\d)_(in|out)_(\d)/g,'$7')); //非反向 版本子項
+
+						//var show_target_num = 0;
+
+						function item_set(show_target_num){
+
+							console.error(JSON.parse(localStorage['5mae']));
+							console.error(JSON.parse(localStorage['5mae'])[show_target_num]);
+
+							var title___ = JSON.parse(localStorage['5mae'])[show_target_num]['title'];
+							console.log('title___ = ' + title___);
+
+							var x__ver = title___.replace(/(\d{0,})_(in|out)_(\d{0,})_(反向比對)|(\d{0,})_(in|out)_(\d{0,})/g,'$1');    //反向 版本
+							console.log('x__ver = ' + x__ver);
+
+							var x__inout = title___.replace(/(\d{0,})_(in|out)_(\d{0,})_(反向比對)|(\d{0,})_(in|out)_(\d{0,})/g,'$2');  //反向 in / out 
+							console.log('x__inout = ' + x__inout);
+
+							var x__c_item = title___.replace(/(\d{0,})_(in|out)_(\d{0,})_(反向比對)|(\d{0,})_(in|out)_(\d{0,})/g,'$3'); //反向 版本子項
+							console.log('x__c_item = ' + x__c_item);
+							
+
+							var x____item = title___.replace(/(\d{0,})_(in|out)_(\d{0,})_(反向比對)|(\d{0,})_(in|out)_(\d{0,})/g,'$4'); //反向比對
+							console.log('x__c_item = ' + x__c_item);
+
+							var ver_ = title___.replace(/(\d{0,})_(in|out)_(\d{0,})_(反向比對)|(\d{0,})_(in|out)_(\d{0,})/g,'$5');      //非反向 版本
+							console.log('ver_ = ' + ver_);
+							
+							var inout_ = title___.replace(/(\d{0,})_(in|out)_(\d{0,})_(反向比對)|(\d{0,})_(in|out)_(\d{0,})/g,'$6');    //非反向 in/out
+							console.log('inout_ = ' + inout_);
+							
+							var item_ = title___.replace(/(\d{0,})_(in|out)_(\d{0,})_(反向比對)|(\d{0,})_(in|out)_(\d{0,})/g,'$7'); 	//非反向 版本子項
+							console.log('item_ = ' + item_);
+
+
+							if(ver_==''||inout_==''||item_==''){//代表反向
+								document.getElementById('Sample_JSON').value = JSON.stringify(JSON.parse(localStorage['cal'])[x__ver+ver_][x__inout + '_' + x____item][x__c_item+item_]['JSON']['sample'],null,'\t');
+								console.log('x__inout + \'_\' + x____item = ' + x__inout + '_' + x____item);
+								document.getElementById('Compare_JSON').value = JSON.stringify(JSON.parse(localStorage['cal'])[x__ver+ver_][x__inout + '_' + x____item][x__c_item+item_]['JSON']['keyin'],null,'\t');
+								document.getElementById('samplename').innerHTML = JSON.parse(localStorage['cal'])[x__ver+ver_][x__inout + '_' + x____item][x__c_item+item_]['sample_name'];
+								console.log('x__c_item+item_ = ' + x__c_item+item_);
+							}else{
+								document.getElementById('Sample_JSON').value = JSON.stringify(JSON.parse(localStorage['cal'])[x__ver+ver_][inout_][x__c_item+item_]['JSON']['sample'],null,'\t');
+								document.getElementById('Compare_JSON').value = JSON.stringify(JSON.parse(localStorage['cal'])[x__ver+ver_][inout_][x__c_item+item_]['JSON']['keyin'],null,'\t');
+								document.getElementById('samplename').innerHTML = JSON.parse(localStorage['cal'])[x__ver+ver_][inout_][x__c_item+item_]['sample_name'];
+								console.log('x__c_item+item_ = ' + x__c_item+item_);
+							}
+
+
+					 		//document.getElementById('Sample_JSON').value = JSON.stringify(JSON.parse(localStorage['cal'])[2]['in_反向比對'][2]['JSON']['sample'],null,'\t');		//document.getElementById('input_JSON').value;
+					 				//document.getElementById('input_JSON').value;
+
+					 		document.getElementById('per').innerHTML = JSON.parse(localStorage['5mae'])[show_target_num]['same_persen'];
+
+					 		// console.log(show_target_num+1 + '. 與 ' + title___ + ' 內容參數比對輸入值，有 ' + JSON.parse(localStorage['5mae'])[show_target_num]['same_persen'] + '% 的項目符合。');
+					 		document.getElementById('__'+(show_target_num+1)).text = show_target_num+1 + '. 與 ' + title___ + ' 內容參數比對輸入值，有 ' + JSON.parse(localStorage['5mae'])[show_target_num]['same_persen'] + '% 的項目符合。';
+					 		document.getElementById('__'+(show_target_num+1)).value = '{\"samplename\"\:\"' + document.getElementById('samplename').innerHTML + '\",\"per\"\:\"' + document.getElementById('per').innerHTML + '\",\"Sample_JSON\"\:' + document.getElementById('Sample_JSON').value + ',\"Compare_JSON\"\:' + document.getElementById('Compare_JSON').value  + '}';
+					 		// document.getElementById('__'+(show_target_num+1)).text = show_target_num+1 + '. 與 ' + title___ + ' 內容參數比對輸入值，有 ' + JSON.parse(localStorage['5mae'])[show_target_num]['same_persen'] + '% 的項目符合。';
+
+
+
+				 		}
+
+
+				 		for (var i = 0; i < 10; i++) {
+				 			item_set(i);
+				 		}
+
+
+				 		// document.getElementById('samplename').innerHTML = JSON.parse(localStorage['cal'])[2]['in_反向比對'][2]['sample_name'];
+
+				 		/*再做兩段，分析 OBJ 對應值前五 ； 2. 選擇器變化，輸出內容就變化
+	歷史紀錄查詢
+
+	TOTP 解密
+				 		*/
+
+
+			}
+
+
+            </script>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				 <h1><a href="#">FAE JSON<span>  by L 維護製作 （2020.11.16 版）</span></a></h1>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="#">____</a></li>
+					<li><a href="#">____</a></li>
+					<li><a href="#">____</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<div id="main">
+				<section class="wrapper style1">
+				<div class="inner" style="width: 97%">
+
+				<!-- Elements -->
+					<!-- <h2 id="elements">Elements</h2> -->
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">
+
+							<!-- Text stuff -->
+<!-- 								<h3>Text</h3>
+								<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+								This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+								This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
+								Finally, this is a <a href="#">link</a>.</p>
+								<hr />
+								<h2>Heading Level 2</h2>
+								<h3>Heading Level 3</h3>
+								<h4>Heading Level 4</h4>
+								<h5>Heading Level 5</h5>
+								<h6>Heading Level 6</h6>
+								<hr />
+								<header>
+									<h2>Heading with a Subtitle</h2>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+								<header>
+									<h3>Heading with a Subtitle</h3>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+								<header>
+									<h4>Heading with a Subtitle</h4>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p> -->
+
+							<!-- Lists -->
+							<!-- 	<h3>Lists</h3>
+								<div class="row">
+									<div class="6u 12u$(small)">
+
+										<h4>Unordered</h4>
+										<ul>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Sagittis adipiscing lorem eleifend.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ul>
+
+										<h4>Alternate</h4>
+										<ul class="alt">
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Sagittis adipiscing lorem eleifend.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ul>
+
+									</div>
+									<div class="6u$ 12u$(small)">
+
+										<h4>Ordered</h4>
+										<ol>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Etiam vel felis at lorem sed viverra.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Etiam vel felis at lorem sed viverra.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ol>
+
+										<h4>Icons</h4>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+											<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+										</ul>
+
+									</div>
+								</div> -->
+<!-- 								<h4>Definition</h4>
+								<dl>
+									<dt>Item 1</dt>
+									<dd>
+										<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</dd>
+									<dt>Item 2</dt>
+									<dd>
+										<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</dd>
+									<dt>Item 3</dt>
+									<dd>
+										<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</dd>
+								</dl> -->
+
+<!-- 								<h4>Actions</h4>
+								<ul class="actions">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+									<li><a href="#" class="button alt">Default</a></li>
+								</ul>
+								<ul class="actions small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+									<li><a href="#" class="button alt small">Small</a></li>
+								</ul>
+								<div class="row">
+									<div class="3u 12u$(small)">
+										<ul class="actions vertical">
+											<li><a href="#" class="button special">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+									</div>
+									<div class="3u 12u$(small)">
+										<ul class="actions vertical small">
+											<li><a href="#" class="button special small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+									</div>
+									<div class="3u 12u$(small)">
+										<ul class="actions vertical">
+											<li><a href="#" class="button special fit">Default</a></li>
+											<li><a href="#" class="button fit">Default</a></li>
+											<li><a href="#" class="button alt fit">Default</a></li>
+										</ul>
+									</div>
+									<div class="3u$ 12u$(small)">
+										<ul class="actions vertical small">
+											<li><a href="#" class="button special small fit">Small</a></li>
+											<li><a href="#" class="button small fit">Small</a></li>
+											<li><a href="#" class="button alt small fit">Small</a></li>
+										</ul>
+									</div>
+								</div> -->
+
+							<!-- Blockquote -->
+<!-- 								<h3>Blockquote</h3>
+								<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote> -->
+
+							<!-- Table -->
+<!-- 								<h3>Table</h3>
+
+								<h4>Default</h4>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Description</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Item 1</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 2</td>
+												<td>Vis ac commodo adipiscing arcu aliquet.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 3</td>
+												<td> Morbi faucibus arcu accumsan lorem.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 4</td>
+												<td>Vitae integer tempus condimentum.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 5</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>100.00</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div> -->
+
+								<!-- <h4>Alternate</h4> -->
+								<div class="table-wrapper">
+<!-- 									<table class="alt">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Description</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Item 1</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 2</td>
+												<td>Vis ac commodo adipiscing arcu aliquet.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 3</td>
+												<td> Morbi faucibus arcu accumsan lorem.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 4</td>
+												<td>Vitae integer tempus condimentum.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 5</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>100.00</td>
+											</tr>
+										</tfoot>
+									</table> -->
+										<div class="12u$">
+											<textarea name="input_JSON" id="input_JSON" placeholder="" rows="28" onpropertychange="setHeight(this);" onmouseover="setHeight(this);" onpaste="setHeight(this);" oninput="setHeight(this);"></textarea>
+										</div>
+								</div>
+
+						</div>
+
+						<div class="6u$ 12u$(medium)">
+
+							<!-- Buttons -->
+<!-- 								<h3>Buttons</h3>
+								<ul class="actions">
+									<li><a href="#" class="button special">Special</a></li>
+									<li><a href="#" class="button">Default</a></li>
+									<li><a href="#" class="button alt">Alternate</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button special big">Big</a></li>
+									<li><a href="#" class="button">Default</a></li>
+									<li><a href="#" class="button alt small">Small</a></li>
+								</ul>
+								<ul class="actions fit">
+									<li><a href="#" class="button special fit">Fit</a></li>
+									<li><a href="#" class="button fit">Fit</a></li>
+									<li><a href="#" class="button alt fit">Fit</a></li>
+								</ul>
+								<ul class="actions fit small">
+									<li><a href="#" class="button special fit small">Fit + Small</a></li>
+									<li><a href="#" class="button fit small">Fit + Small</a></li>
+									<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button special icon fa-search">Icon</a></li>
+									<li><a href="#" class="button icon fa-download">Icon</a></li>
+									<li><a href="#" class="button alt icon fa-check">Icon</a></li>
+								</ul>
+								<ul class="actions">
+									<li><span class="button special disabled">Special</span></li>
+									<li><span class="button disabled">Default</span></li>
+									<li><span class="button alt disabled">Alternate</span></li>
+								</ul> -->
+
+							<!-- Form -->
+								<!-- <h3>Form</h3> -->
+
+								<form method="post" action="#">
+									<div class="row uniform">
+	<!-- 									<div class="5u 12u$(xsmall)">
+											<input type="text" name="name" id="name" value="" placeholder="Name" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email" />
+										</div> -->
+										<!-- Break -->
+<!-- 										先設定好各種觸發
+
+自動暫存回填
+
+webfont 替換掉
+ -->
+										<div class="12u$">
+											<div class="select-wrapper">
+												<select name="category" id="___" style="background-color: #15324c;">
+													<option id="__1" value="1"></option>
+													<option id="__2" value="2"></option>
+													<option id="__3" value="3"></option>
+													<option id="__4" value="4"></option>
+													<option id="__5" value="5"></option>
+													<option id="__6" value="6"></option>
+													<option id="__7" value="7"></option>
+													<option id="__8" value="8"></option>
+													<option id="__9" value="9"></option>
+													<option id="__10" value="10"></option>
+												</select>
+											</div>
+										</div>
+										<!-- Break -->
+<!-- 										<div class="1u 12u$(small)">
+											<input type="radio" id="priority-low" name="priority" checked>
+											<label for="priority-low">Low Priority</label>
+										</div>
+										<div class="1u 12u$(small)">
+											<input type="radio" id="priority-normal" name="priority">
+											<label for="priority-normal">Normal Priority</label>
+										</div>
+										<div class="1u$ 12u$(small)">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">High Priority</label>
+										</div>
+										<div class="1u$ 12u$(small)">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">High Priority</label>
+										</div>
+										<div class="1u$ 12u$(small)">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">High Priority</label>
+										</div> -->
+
+										<!-- Break -->
+<!-- 										<div class="6u 12u$(small)">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Email me a copy of this message</label>
+										</div> -->
+<!-- 										<div class="6u$ 12u$(small)">
+											<input type="checkbox" id="human" name="human" checked>
+											<label for="human">I am a human and not a robot</label>
+										</div> -->
+										<!-- Break -->
+										<div class="12u$">
+											<textarea name="Compare_JSON" id="Compare_JSON" placeholder="" rows="11" onpropertychange="setHeight(this);" onmouseover="setHeight(this);" onpaste="setHeight(this);" oninput="setHeight(this);"></textarea>
+											<span id="outitem">與 <span id="samplename"></span> 內容參數比對輸入值，有 <span id="per"> ？ </span>% 也有下面參數的項目。</span><br / >
+											<textarea name="Sample_JSON" id="Sample_JSON" placeholder="" rows="12" onpropertychange="setHeight(this);" onmouseover="setHeight(this);" onpaste="setHeight(this);" oninput="setHeight(this);"></textarea>
+										</div>
+										<!-- Break -->
+<!-- 										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+												<li><input type="reset" value="Reset" class="alt" /></li>
+											</ul>
+										</div> -->
+									</div>
+								</form>
+
+								<!-- <hr /> -->
+<!-- 
+								<form method="post" action="#">
+									<div class="row uniform">
+										<div class="9u 12u$(small)">
+											<input type="text" name="query" id="query" value="" placeholder="Query" />
+										</div>
+										<div class="3u$ 12u$(small)">
+											<input type="submit" value="Search" class="fit" />
+										</div>
+									</div>
+								</form> -->
+
+							<!-- Image -->
+<!-- 								<h3>Image</h3>
+
+								<h4>Fit</h4>
+								<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+								<div class="box alt">
+									<div class="row 50% uniform">
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div> -->
+										<!-- Break -->
+<!-- 										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div> -->
+										<!-- Break -->
+<!-- 										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div> -->
+									</div>
+								</div>
+
+<!-- 								<h4>Left &amp; Right</h4>
+								<p><span class="image left"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
+								<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p> -->
+
+							<!-- Box -->
+<!-- 								<h3>Box</h3>
+								<div class="box">
+									<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam.</p>
+								</div> -->
+
+							<!-- Preformatted Code -->
+								<!-- <h3>Preformatted</h3>
+								<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';
+</code></pre>
+ -->
+						</div>
+					</div>
+				</div>
+				</section>
+			</div>
+
+		<!-- Footer -->
+			<!-- <footer id="footer"> -->
+<!-- 				<div class="inner">
+					<div class="flex flex-3">
+						<div class="col">
+							<h3>Vestibullum</h3>
+							<ul class="alt">
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+								<li><a href="#">Vis id faucibus montes tempor</a></li>
+								<li><a href="#">Massa amet lobortis vel.</a></li>
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Lobortis</h3>
+							<ul class="alt">
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+								<li><a href="#">Vis id faucibus montes tempor</a></li>
+								<li><a href="#">Massa amet lobortis vel.</a></li>
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Accumsan</h3>
+							<ul class="alt">
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+								<li><a href="#">Vis id faucibus montes tempor</a></li>
+								<li><a href="#">Massa amet lobortis vel.</a></li>
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Coverr</a>. Video: <a href="https://coverr.co">Coverr</a>.
+				</div> -->
+			<!-- </footer> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
